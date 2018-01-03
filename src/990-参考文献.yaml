@@ -1,0 +1,190 @@
+\lhead[]{}
+\rhead[]{}
+\chead[参考文献]{参考文献}
+
+# 参考文献
+
+---
+fontsize: 16pt
+link-citations: true
+
+references:
+- id: Edwards2012
+  title: "The History Of DevOps"
+  author:
+  - given: Damon
+    family: Edwards
+  issued:
+    year: 2012
+  URL: http://itrevolution.com/the-history-of-devops/
+- id: Crispin2009
+  title: 'Agile Testing(実践アジャイルテスト テスターとアジャイルチームのための実践ガイド 翔泳社)'
+  author:
+  - family: Crispin
+    given: Lisa
+  - family: Gregory
+    given: Janet
+  translator:
+  - given: 彰
+    family: 榊原
+  - given: 直樹
+    family: 山腰
+  - given: 聡
+    family: 増田
+  - given: 正章
+    family: 石橋
+  publisher:  Addison-Wesley
+  language: ja
+  issued:
+    year: 2009
+- id: Huttermann2011a
+  title: 'Agile ALM: Lightweight Tools and Agile Strategies'
+  author:
+  - family: Hüttermann
+    given: Michael
+  issued:
+    year: 2011
+  publisher: Manning
+- id: Huttermann2011b
+  title: 'Agile ALM and Collaborative Development'
+  author:
+  - family: Hüttermann
+    given: Michael
+  issued:
+    year: 2011
+  URL: http://huettermann.net/perform/AgileALM-AgileRecord-Huettermann.pdf
+- id: Gregory2015   
+  title: 'More Agile Testting Learining Journeys For The Whole Team'
+  author:
+  - family: Gregory
+    given: Janet  
+  - family: Crispin
+    given: Lisa
+  issued:
+    year: 2015
+  publisher: Addison-Wesley
+- id: Sato2015
+  title: 'GebによるスマートなE2Eテスト…… シンプルなコードでブラウザ操作を自動化しよう'
+  author:
+  - given: 太一
+    family: 佐藤
+  issued:
+    year: 2015
+  type: article-journal
+  language: ja
+  volumn: VOL.95
+  container-title: WEB+DB PRESS VOL.85     
+- id: Kim2014
+  title: 'The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win（「The DevOps 逆転だ! 究極の継続的デリバリー」）'
+  author:
+  - family: Kim
+    given: Gene
+  - family: Behr
+    given: kevin
+  issued:
+    year: 2014
+  publisher: 日経BP
+  translator:
+  - given: 彰
+    family: 榊原
+  - given: 高広
+    family: 長尾
+- id: Gruver2016
+  title: 'Leading the Transformation: Applying Agile and DevOps Principles at Scale(変革の軌跡 世界で戦える会社に変わる"アジャイル・DevOps"導入の原則」)'
+  author:
+  - family: Gary
+    given: Gruver
+  - family: Tommy
+    given: Kevin
+  issued:
+    year: 2016
+  publisher: 技術評論社
+  translator:
+  - given: 龍太郎
+    family: 吉羽
+  - given: 騎郎 
+    family: 原田
+- id: Allspaw2009
+  author:
+  - family: John
+    given: Allspaw
+  title: '10+ Deploys Per Day: Dev and Ops Cooperation at Flickr '
+  URL: https://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr
+  issued:
+    year: 2009
+- id: Mehta2014
+  author:
+  - family: Ankit
+    given: Mehta
+  title: 'Move Fast & Don''t Break Things'
+  issued:
+    year: 2014
+  URL: https://docs.google.com/presentation/d/15gNk21rjer3xo-b1ZqyQVGebOp_aPvHU3YH7YnOMxtE/edit
+- id: PoohSunny2014
+  title: '地味だけどGebをgroovyにしている5Tips #SWTestAdvent'
+  author:
+  - family: PoohSunny
+  URL: https://qiita.com/PoohSunny/items/259560f00cface52ed23
+  issued:
+    year: 2014
+- id: Ito2016
+  title: 'Selenium実践入門 自動化による継続的なブラウザテスト'    
+  author:
+  - family: 伊藤
+    given: 望
+  - family: 戸田
+    given: 広
+  - family: 沖田
+    given: 邦夫
+  - family: 宮田
+    given: 淳平
+  - family: 長谷川
+    given: 淳
+  - family: 清水
+    given: 直樹
+  - family: Banthia
+    given: Vishal
+  issued:
+    year: 2016
+  publisher: 技術評論社
+- id: Takahashi2017
+  title: 'Groovy製のSeleniumラッパーライブラリ「Geb」で、可読性の高いテストを書いてみよう'   
+  author:
+  - family: 高橋
+    given: 陽太郎
+  issued:
+    year: 2017
+  URL: https://codezine.jp/article/detail/10456
+- id: Huttermann2011
+  title: 'Agile ALM: Lightweight Tools and Agile Strategies'
+  author:
+  - family: Hüttermann
+    given: Michael
+  issued:
+    year: 2011
+  publisher: Manning
+- id: Debois2008
+  title: 'Agile Infrastructure & Operations'
+  author:
+  - family: Debois
+    given: Patrick
+  URL: http://www.jedi.be/presentations/agile-infrastructure-agile-2008.pdf
+  issued:
+    year: 2008
+- id: Ubiteku2015
+  title: 'DevOpsの起源とOpsを巡る対立'
+  author:
+  - family: ubiteku
+  issued:
+    year: 2015
+  URL: https://ubiteku.oinker.me/2015/07/01/devops%E3%81%AE%E8%B5%B7%E6%BA%90%E3%81%A8ops%E3%82%92%E5%B7%A1%E3%82%8B%E5%AF%BE%E7%AB%8B/
+- id: Natumi2010
+  title: 'なれる! SE2 基礎から学ぶ？運用構築'
+  author:
+  - family: 夏海
+    given: 公司
+  issued:
+    year: 2010
+  publisher: アスキー・メディアワークス
+---
+
