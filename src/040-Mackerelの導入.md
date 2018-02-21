@@ -1,49 +1,60 @@
 
 # Mackerelの導入
 
-## 用語について
+## Mackerelに登録する
 
-- オーガニゼーション
+新規の登録は、 [https://mackerel.io/signup](https://mackerel.io/signup) より行います。
 
-Mackerelにアカウントを所有するユーザーはサービス全体で一つのアカウントを使用します。
+メールアドレスを入力すると、作成するオーガニゼーションの
+入力を求められるので、それに従います。
 
-Mackerelでは監視を行う対象の単位として「オーガニゼーション」という
-ものがあり、Mackerelのユーザーはこのオーガニゼーションに所属することになります。
+続いてプランの選択に移ります。オーガニゼーションの登録から2週間は
+Trialプランとして、全ての機能を制限なく使用することができますので、
+Trialプランを選択します。
 
-またユーザーは、複数のオーガニゼーションに所属することが可能です。
+プランの選択が完了すると、登録したメールアドレスに
 
-Mackerelでは通常は組織単位ではなく、ITサービスやシステムの単位でオーガニゼーションを構成します。これは、業務委託先に所属するユーザーや、エンドユーザーなど、
-運営主体と異なる組織のユーザーをオーガニゼーションに参加可能にするためです。
+>  [Mackerel] Please verify your email
 
-- ホスト
+というSubjectのメールが届くので、メール文の案内にしたがって
+アカウントのパスワードの設定を行うと、初期登録は完了です。
 
-Mackerelでは監視対象となるホストにエージェントをインストールし、そのエージェントがmackerelのサービスを提供するサーバーと通信を行う事でメトリクスの収集を行います。
+## mackerel-agentのセットアップ
 
-Mackerelでは、一ヶ月でのアクティブ ^[通常、mackerel-agentの起動数] なホスト数の移動平均でホスト数を算出し、 ^[[https://mackerel.io/ja/docs/entry/faq/contracts/calculate-host-number](https://mackerel.io/ja/docs/entry/faq/contracts/calculate-host-number)]、算出したホスト数が課金の単位となります。
+mackerelにログインすると、ダッシュボードの左下に、
 
-また、プランごとの各種項目数がプラン上限を超えている場合、ホスト数として換算して課金を行います。^[[https://mackerel.io/ja/docs/entry/faq/contracts/limit-exceeded-conversion](https://mackerel.io/ja/docs/entry/faq/contracts/limit-exceeded-conversion)]
+- 「スタートガイド」
+- 「新規ホストの登録」
 
-なお課金プランの詳細については、サービス運営元にお問い合わせください。
+というリンクがあります。セットアップは、このリンクから辿るガイダンスに従って行います。
 
-- メトリック
+「新規ホストの登録」を選択すると、対象のOSごとにmackerel-agentを
+セットアップするためのワンライナーが表示されます。表示されているスクリプトをコピーして、セットアップするホストのプロンプト上で実行します。
 
-mackerel-agentが収集するホストの様々なホストの状況をメトリックと呼びます。メトリクス
-とも呼ばれますが、Mackerelのサービスにおいてはメトリックと呼ばれるため、本稿でもメトリックという呼び方で統一します。^[[https://mackerel.io/ja/docs/entry/glossary](https://mackerel.io/ja/docs/entry/glossary)]
+なお、ワンライナー中にはmackerelにアクセスするためのAPIキーが含まれているので、扱いには注意してください。
 
-## Mackerelのセットアップ
-
-※フリープランについて
-
-https://mackerel.io/signup
-
-→ [Mackerel] Please verify your email
-
+CentOS7の場合は
 
 ```
 curl -fsSL https://mackerel.io/file/script/setup-all-yum-v2.sh | MACKEREL_APIKEY='xxx' sh
 ```
 
-サーバーのプロビジョニングのスクリプトに組み込む等の理由で、
-手順を踏んでセットアップを行う場合は、
-手動でセットアップする場合
+となります。
+
+サーバーをセットアップする(プロビジョニング)のスクリプトに
+組み込む等の理由で手順を踏んでセットアップを行う場合があります。
+この場合は、「または段階的に新規ホストを登録する」以下の記述に従って、
+ホストのセットアップを行います。
+
+
+## Windowsについて
+
+mackerel-agentはMicrosoft Windows(以下Windows)上で動作するホスト上での動作も公式にサポートしています。
+
+Windowsのホストにmackerel-agentを導入するには、「新規ホストの登録」のページ中で「Microsoft Windows」を選択して、「mackerel-agent-latest.msi」をダウンロードし、ガイダンスの指示に従ってインストールを行います。
+
+# ユーザーの招待について
+
+すでに作成されたオーガニゼーションには、オーガニゼーションの管理者が
+招待を行うことによってユーザーが加わることができます。
 
