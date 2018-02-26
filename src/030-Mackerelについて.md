@@ -62,7 +62,7 @@ Mackerelでは、一ヶ月でのアクティブ ^[通常、mackerel-agentの起�
 
 また、プランごとの各種項目数がプラン上限を超えている場合、ホスト数として換算して課金を行います。^[[https://mackerel.io/ja/docs/entry/faq/contracts/limit-exceeded-conversion](https://mackerel.io/ja/docs/entry/faq/contracts/limit-exceeded-conversion)]
 
-なお課金プランの詳細については、サービス運営元にお問い合わせください。
+なお課金プランの詳細については、サービス運営元の株式会社はてなにお問い合わせください。
 
 - メトリック
 
@@ -70,4 +70,16 @@ mackerel-agentが収集するホストの様々なホストの状況をメトリ
 とも呼ばれますが、Mackerelのサービスにおいてはメトリックと呼ばれるため、本稿でもメトリックという呼び方で統一します。^[[https://mackerel.io/ja/docs/entry/glossary](https://mackerel.io/ja/docs/entry/glossary)]
 
 - サービス
+
+
+
+- ロール
+
+ロールはサービスに所属するホストをさらにその「役割」によって分類する概念です。
+
+オートスケールや「Infrastructure as Code」などの、インフラに関する自動化の進展により、ホストは動的に増減を行うようになり、ホストやコンテナーを入れ替える形式でのデプロイも一般的となりました。
+
+Mackerelでは、動的に増減するホストを「データベース」や「Webサーバー」などの
+役割によってグルーピングし、○○内で可視化することができます。
+
 

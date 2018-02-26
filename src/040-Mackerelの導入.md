@@ -31,7 +31,7 @@ mackerelにログインすると、ダッシュボードの左下に、
 「新規ホストの登録」を選択すると、対象のOSごとにmackerel-agentを
 セットアップするためのワンライナーが表示されます。表示されているスクリプトをコピーして、セットアップするホストのプロンプト上で実行します。
 
-なお、ワンライナー中にはmackerelにアクセスするためのAPIキーが含まれているので、扱いには注意してください。
+なお、ワンライナー中にはmackerelにアクセスするためのAPIキーが含まれているので、公開Gitレポジトリーにコミットして露出することなどがないよう、扱いには注意してください。
 
 CentOS7の場合は
 
@@ -46,6 +46,32 @@ curl -fsSL https://mackerel.io/file/script/setup-all-yum-v2.sh | MACKEREL_APIKEY
 この場合は、「または段階的に新規ホストを登録する」以下の記述に従って、
 ホストのセットアップを行います。
 
+以下のCentOS7の場合のセットアップ手順を示します。
+
+Mackerelのyumレポジトリーのセットアップを行います。
+
+```
+ curl -fsSL https://mackerel.io/file/script/setup-yum-v2.sh | sh
+```
+
+mackerel-agentのインストールを行います。
+
+```
+sudo yum install -y mackerel-agent
+```
+
+```
+sudo mackerel-agent init -apikey="(APIキー)"
+```
+
+mackerel-agentを起動します。
+
+```
+sudo systemctl start mackerel-agent
+```
+
+なお、mackerel-agentのログは、 ` sudo journalctl -u mackerel-agent.service` で行います。
+
 
 ## Windowsについて
 
@@ -53,8 +79,9 @@ mackerel-agentはMicrosoft Windows(以下Windows)上で動作するホスト上�
 
 Windowsのホストにmackerel-agentを導入するには、「新規ホストの登録」のページ中で「Microsoft Windows」を選択して、「mackerel-agent-latest.msi」をダウンロードし、ガイダンスの指示に従ってインストールを行います。
 
-# ユーザーの招待について
+## ユーザーの招待について
 
 すでに作成されたオーガニゼーションには、オーガニゼーションの管理者が
 招待を行うことによってユーザーが加わることができます。
 
+ユーザーの招待は、メニュー左上のオーガニゼーション名をクリックして表示する設定画面で、「メンバー」タブ内の「招待する」ボタンを選択して行います。
