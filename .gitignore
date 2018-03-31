@@ -3,3 +3,4 @@ techbookfest*
 *.aux
 *.out
 *.pdf
+src/tmp.md

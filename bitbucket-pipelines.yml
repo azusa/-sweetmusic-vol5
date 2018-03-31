@@ -6,8 +6,8 @@ pipelines:
           script:
             - rm -rf target
             - mkdir -p target
-            - curl -L -O http://sakura.fieldnotes.jp/images/f2.ttf
-            - curl -L -O http://sakura.fieldnotes.jp/images/b2.ttf
+            - (cd src && curl -L -O http://sakura.fieldnotes.jp/images/f2.ttf)
+            - (cd src && curl -L -O http://sakura.fieldnotes.jp/images/b2.ttf)
             - curl -L -O http://sakura.fieldnotes.jp/images/RictyDiminished-Regular.ttf
             - bash ./build.sh
             - bash ./deploy.sh master
