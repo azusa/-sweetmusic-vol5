@@ -14,7 +14,7 @@ do
   cat $file >> src/tmp.md
   cat src/newpage.txt >> src/tmp.md
 done
-cat src/990*.yaml >> target/tmp.md
+cat src/990*.yaml >> src/tmp.md
 
 cat -n src/tmp.md
 
