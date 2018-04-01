@@ -1,3 +1,6 @@
+\lhead[]{}
+\rhead[]{}
+\chead[Mackerelの導入]{Mackerelの導入}
 
 # Mackerelの導入
 
@@ -86,7 +89,7 @@ mackerel-agentを起動します。[@lst:code_040_code05]
 sudo systemctl start mackerel-agent
 ```
 
-なお、mackerel-agentのログは、 `sudo journalctl -u mackerel-agent.service` で行います。
+なお、mackerel-agentのログの閲覧は、 `sudo journalctl -u mackerel-agent.service` で行います。
 
 
 ## Windowsについて
