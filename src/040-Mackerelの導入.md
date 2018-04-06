@@ -4,6 +4,8 @@
 
 # Mackerelの導入
 
+Mackerelの導入方法については「Mackerel サーバ監視［実践］入門」[@Inoue2017] にも記述がありますが、本著においても記述を理解するために必要な範囲についても次の章で説明を行います。
+
 ## Mackerelに登録する
 
 新規の登録は、 [https://mackerel.io/signup](https://mackerel.io/signup) より行います。[@fig:img_040_a_image]
@@ -92,7 +94,7 @@ sudo systemctl start mackerel-agent
 なお、mackerel-agentのログの閲覧は、 `sudo journalctl -u mackerel-agent.service` で行います。
 
 
-## Windowsについて
+## Windowsへのmackerel-agentの導入
 
 mackerel-agentはMicrosoft Windows(以下Windows)上で動作するホスト上での動作も公式にサポートしています。
 
