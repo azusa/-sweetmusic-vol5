@@ -70,7 +70,7 @@ Mackerelでは、一ヶ月でのアクティブ ^[通常、mackerel-agentの起�
 - メトリック
 
 mackerel-agentが収集するホストの様々なホストの状況をメトリックと呼びます。メトリクス
-とも呼ばれますが、Mackerelのサービスにおいてはメトリックと呼ばれるため、本稿でもメトリックという呼び方で統一します。^[[https://mackerel.io/ja/docs/entry/glossary](https://mackerel.io/ja/docs/entry/glossary)]
+とも呼ばれますが、Mackerelのサービスにおいてはメトリックと呼ばれるため、本書でもメトリックという呼び方で統一します。^[[https://mackerel.io/ja/docs/entry/glossary](https://mackerel.io/ja/docs/entry/glossary)]
 
 - サービス
 
