@@ -35,5 +35,19 @@ references:
   URL: https://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr
   issued:
     year: 2009
+- id: Fowler2017
+  author:
+  - family: Fowler
+    given: Susan J.
+  title: 'Production-Ready Microservices(「プロダクションレディマイクロサービス 運用に強い本番対応システムの実装と標準化」オライリー・ジャパン)'    
+  issued:
+    year: 2017
+  publisher: O’Reilly Media, 
+  translator:
+  - given: 直生
+    family: 佐藤
+  - given: 高弘
+    family: 長尾
+    
 ---
 
