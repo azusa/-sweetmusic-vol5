@@ -35,7 +35,7 @@ Mackerelではプラグインを導入することにより、ミドルウェア
 
 ## 課金体系
 
-Mackerelの料金プランはホスト数により課金されるStandardプランと、Freeプランに分かれています。^[[https://mackerel.io/ja/pricing/](https://mackerel.io/ja/pricing/)]
+Mackerelの料金プランはホスト数により課金されるStandardプランと、Freeプランに分かれています。^[[https://mackerel.io/ja/pricing/](https://mackerel.io/ja/pricing/)] ^[2018年4月現在]
 
 Freeプランはホスト数、一部機能(外形監視、カスタムダッシュボード、グラフ表示期間など)の
 制約を受けますが、単体のホストのホストメトリックの監視については制限がほぼなく、
