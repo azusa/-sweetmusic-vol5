@@ -1,3 +1,5 @@
+Remove-Item target\*.pdf
+
 docker build -t tf3 .
 docker run tf3
 
