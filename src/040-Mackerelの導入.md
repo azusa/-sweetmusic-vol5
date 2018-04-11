@@ -42,6 +42,18 @@ mackerelにログインすると、ダッシュボードの左下に、
 
 というリンクがあります。セットアップは、このリンクから辿るガイダンスに従って行います。([@fig:img_040_e_image])
 
+### 機能のURL
+
+このリンクのURLは
+
+`https://mackerel.io/orgs/<オーガニゼーション名>/instruction-agent`
+
+となりオーガニゼーションごとに可変です。Mackerelでは
+
+[https://mackerel.io/my/instruction-agent](https://mackerel.io/my/instruction-agent)
+
+というURLにアクセスすることで、ログインセションが最後に参照していたオーガニゼーションにリダイレクトされます。本書では、機能のURLを表記する際に、このURLで表記します。
+
 ![ダッシュボード](img/signup-5.png){#fig:img_040_e_image}
 
 「新規ホストの登録」を選択すると、対象のOSごとにmackerel-agentを
