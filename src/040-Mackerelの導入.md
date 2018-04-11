@@ -40,7 +40,7 @@ mackerelにログインすると、ダッシュボードの左下に、
 - 「スタートガイド」
 - 「新規ホストの登録」
 
-というリンクがあります。セットアップは、このリンクから辿るガイダンスに従って行います。[@fig:img_040_e_image]
+というリンクがあります。セットアップは、このリンクから辿るガイダンスに従って行います。([@fig:img_040_e_image])
 
 ![ダッシュボード](img/signup-5.png){#fig:img_040_e_image}
 
@@ -82,14 +82,15 @@ sudo yum install -y mackerel-agent
 sudo mackerel-agent init -apikey="(APIキー)"
 ```
 
-mackerel-agentを起動します。[@lst:code_040_code05]
+mackerel-agentを起動します。([@lst:code_040_code05])
 
 
 ```{#lst:code_040_code05 caption="mackerel-agentの起動"}
 sudo systemctl start mackerel-agent
 ```
 
-なお、mackerel-agentのログの閲覧は、 `sudo journalctl -u mackerel-agent.service` で行います。
+なお、mackerel-agentのログの閲覧は、  
+ `sudo journalctl -u mackerel-agent.service` で行います。
 
 
 ## Windowsへのmackerel-agentの導入
