@@ -64,7 +64,7 @@ Mackerelでは通常は組織単位ではなく、ITサービスやシステム�
 
 - ホストとエージェント
 
-Mackerelでは監視対象となるホストにmackerel-agentと呼ばれるエージェントをインストールし、そのエージェントがmackerelのサービスを提供するサーバーと通信を行う事でメトリクスの収集を行います。
+Mackerelでは監視対象となるホストにmackerel-agentと呼ばれるエージェントをインストールし、そのエージェントがmackerelのサービスを提供するサーバーと通信を行う事でメトリックの収集を行います。
 
 Mackerelでは、一ヶ月でのアクティブ ^[通常、mackerel-agentの起動数] なホスト数の移動平均でホスト数を算出し、 ^[[https://mackerel.io/ja/docs/entry/faq/contracts/calculate-host-number](https://mackerel.io/ja/docs/entry/faq/contracts/calculate-host-number)]、算出したホスト数が課金の単位となります。
 
