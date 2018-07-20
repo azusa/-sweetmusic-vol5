@@ -4,3 +4,4 @@ techbookfest*
 *.out
 *.pdf
 src/tmp.md
+node_modules
