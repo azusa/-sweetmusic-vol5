@@ -1,0 +1,7 @@
+@page {
+    size: B5;
+}
+
+h1 {
+    break-before: page;
+}
